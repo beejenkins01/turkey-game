@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  @apply bg-sky-300;
+}
+
+.dog-cursor {
+  cursor: url("data:image/svg+xml,%3Csvg width='110' height='110' viewBox='0 0 110 110' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cellipse cx='78' cy='70' rx='25' ry='22' fill='%23FFFFFF' stroke='%23000000' stroke-width='3'/%3E%3Cellipse cx='69' cy='67' rx='12' ry='15' fill='%233E2723'/%3E%3Cellipse cx='83' cy='72' rx='11' ry='14' fill='%234A2C2A'/%3E%3Crect x='81' y='88' width='8' height='18' fill='%23FFFFFF' stroke='%23000000' stroke-width='3' rx='3'/%3E%3Cellipse cx='85' cy='106' rx='5' ry='3' fill='%23FFFFFF' stroke='%23000000' stroke-width='2'/%3E%3Cline x1='69' y1='88' x2='60' y2='98' stroke='%23FFFFFF' stroke-width='8' stroke-linecap='round'/%3E%3Cline x1='69' y1='88' x2='60' y2='98' stroke='%23000000' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='60' y1='98' x2='67' y2='108' stroke='%23FFFFFF' stroke-width='8' stroke-linecap='round'/%3E%3Cline x1='60' y1='98' x2='67' y2='108' stroke='%23000000' stroke-width='3' stroke-linecap='round'/%3E%3Cellipse cx='67' cy='108' rx='5' ry='3' fill='%23FFFFFF' stroke='%23000000' stroke-width='2'/%3E%3Ccircle cx='60' cy='98' r='4' fill='%23FFFFFF' stroke='%23000000' stroke-width='2'/%3E%3Cellipse cx='60' cy='60' rx='11' ry='10' fill='%23FFFFFF' stroke='%23000000' stroke-width='3'/%3E%3Cellipse cx='44' cy='55' rx='20' ry='24' fill='%23FFFFFF' stroke='%23000000' stroke-width='3.5'/%3E%3Cellipse cx='39' cy='50' rx='11' ry='14' fill='%233E2723'/%3E%3Cellipse cx='50' cy='39' rx='9' ry='15' fill='%234A2C2A' stroke='%23000000' stroke-width='3' transform='rotate(20 50 39)'/%3E%3Ccircle cx='39' cy='52' r='5' fill='%23000000'/%3E%3Ccircle cx='40' cy='51' r='2' fill='%23FFFFFF'/%3E%3Cellipse cx='22' cy='60' rx='6' ry='5.5' fill='%23000000' stroke='%23000000' stroke-width='2'/%3E%3Cpath d='M 22,66 Q 28,69 35,66' stroke='%23000000' stroke-width='3' fill='none'/%3E%3Cpath d='M 97,66 Q 106,60 106,50' stroke='%233E2723' stroke-width='8' fill='none' stroke-linecap='round'/%3E%3C/g%3E%3C/svg%3E") 22 60, auto;
+}
+
+@keyframes flyAway {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-400px) scale(0.5);
+    opacity: 0;
+  }
+}
