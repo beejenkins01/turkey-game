@@ -31,4 +31,17 @@ jobs:
 
       # NEW — REPLACES THE DEPRECATED ACTION
       - name: Upload built site
-        uses: actions/upload-pages-artifac
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
